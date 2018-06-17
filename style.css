@@ -349,7 +349,7 @@
 #maps{
     height: 340px;
     width: 100%;
-    background-image: url('src/maps.png');
+    background-image: url('maps.png');
     background: cover;
     
 }
