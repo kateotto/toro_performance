@@ -60,7 +60,7 @@
 /* BANNER SECTION */
 
 #banner{
-    background-image: url("src/banner.png");
+    background-image: url("banner.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
