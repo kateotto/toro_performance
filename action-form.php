@@ -18,7 +18,9 @@
          <br/>  <br/>
          <a>NAME: </a>
          <?php 
-         echo $name;
+         
+            if($name == "") echo "Błąd! Brak danych!";
+            else echo $name;
          ?>
          <br/><br/>
          <a>EMAIL: </a>
@@ -29,8 +31,8 @@
            <br/><br/>
          <a>MESSAGE: </a>
           <?php
-          
-          echo $msg;
+          if ($msg == "") echo "Bład! Wiadomość nie może być pusta!";
+          else echo $msg;
           
           
          }
