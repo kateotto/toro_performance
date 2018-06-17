@@ -1,0 +1,514 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* HEADER SECTION*/
+
+#header{
+    height: 80px;
+    background-color: #1d2126;
+    color: #fff;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#logo{
+    width: 40%;
+    
+}
+
+#navigation{
+    width: 60%;
+    text-align: center;
+    
+}
+.nav{   
+    margin-right: 20px;
+    color: #a4aead;
+    justify-content: center;
+    border: 2px transparent solid;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.5s ease-in-out border color;
+    cursor: pointer;
+}
+
+.nav:hover{
+  border: 2px #a4aead solid; 
+}
+
+.nav:active{
+    color: #23b7a4;
+     border: 2px #23b7a4 solid; 
+}
+
+
+/* BANNER SECTION */
+
+#banner{
+    background-image: url("src/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    max-width: 100%;
+    
+    color: #fff;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   
+}
+
+.banner_title{
+    font-size: 36px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    width: 50%;
+}
+
+.banner_desc{
+    width:50%;  
+}
+
+#banner button{
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 20px;
+    width: 100px;
+    color: #fff;
+    margin-top: 10px;
+    outline: none;
+}
+
+#banner button:hover{
+    border: 2px #23b7a4 solid;
+    background-color: #23b7a4;
+}
+
+/* MEET THE TEAM SECTION */
+
+#about{
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+   
+}
+
+.meetTeam{
+     font-size: 36px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    color: #000;
+    margin-left: 10%;
+    margin-bottom: 50px;
+    border-left: 10px solid #dedede;
+    padding-left: 20px;
+    
+}
+
+#team{
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+    grid-gap: 0px;
+    grid-auto-flow: row; 
+}
+.person{
+    background-color: #fff;
+    height: 300px;
+}
+.person img{
+    background-color: #fff;
+}
+
+.person img:hover{
+    opacity: 0.6;
+}
+.team{
+    background-color: #e1e6ea;
+    width: 260px;
+    height: 350px;
+    margin-right: 20px;
+    float: left;
+}
+
+.team:hover{
+    background-color: #3a454d;
+}
+
+.name, .job{
+    display: flex;
+    z-index: 1;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    padding-left: 5px;
+}
+
+.name{
+    font-size: 14px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.job{
+    font-size: 14px;
+    color: #989b9e;
+}
+
+/* LOVELY WORK SECTION */
+
+#gallery{
+    background-color: #3a454d;
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.lovelyWork{
+    color: #fff;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    border-left: 10px solid #4e5a62;
+    padding-left: 20px;
+    
+}
+
+.item-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    grid-auto-flow: row;
+    position: relative;
+}
+
+.item{
+    width: 360px;
+    height: 265px;
+    flex: 33%;
+    cursor: pointer;
+    position: relative;
+}
+.itemHover img{
+    background-color: #000;
+}
+
+.itemHover{
+    width: inherit;
+    height: inherit;
+   
+    flex: 33%;
+    overflow: hidden;    
+   }
+   
+   .itemHover:hover img{
+       opacity: 0.2;
+        
+   }
+   
+.plusSign{
+    color: #fff;
+    font-size: 50px;
+    position: absolute;
+    bottom: 50%;
+    left: 45%;
+    visibility: hidden;
+    
+}
+
+.imgDescription{
+    width: 320px;
+    color: #fff;
+   position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    background-color: #292f36;
+    visibility: hidden;
+   
+    }
+    
+.itemHover:hover .imgDescription, .itemHover:hover .plusSign{
+    visibility: visible;
+    }
+    
+    
+.imgDescription{
+      background-color: #292f36;
+}
+.showBtn{
+    color: #fff;
+    background-color: transparent;
+    border: 2px #fff solid;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+}
+
+
+/* WHAT WE DO SECTION */
+
+#whatwedo{
+    padding-top: 50px;
+    height: 100%;
+    width: 100%;
+}
+
+.whatwedo{
+     color: #000;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 36px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    border-left: 10px solid #dedede;
+    padding-left: 20px;
+}
+
+#task-container{
+    display: grid;
+   
+    grid-template-columns: auto auto auto auto;
+    grid-auto-flow: row;
+    margin-top: 100px;
+    margin-right: 10%;
+    margin-left: 5%;
+     grid-auto-columns: minmax(220px, auto);
+     
+}
+
+.task{
+    display: grid;
+    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.task-title{
+    font-size: 16px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    color: #000;
+}
+
+.task-description{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #8d8f92;
+}
+
+/* STAY IN TOUCH*/
+
+#stayintouch{
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 100px;
+}
+
+.stayintouch{
+     color: #000;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 36px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    border-left: 10px solid #dedede;
+    padding-left: 20px;
+  
+}
+
+
+#maps{
+    height: 340px;
+    width: 100%;
+    background-image: url('src/maps.png');
+    background: cover;
+    
+}
+
+
+.form-container {
+  display: flex;
+  width: 960px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact {
+  background: #fff;
+  padding: 24px;
+  width: 50%;
+}
+
+.contact h2{
+     font-family: 'Quattrocento Sans', sans-serif;
+     font-size: 20px;
+     font-weight: 700px;
+     padding-bottom: 20px;
+}
+
+.contact p{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #a4a5a8;
+}
+
+.contact-form {
+  margin-top: -100px;
+  z-index: 10;
+  font-family: 'Open Sans', sans-serif;
+    color: #a4a5a8;
+}
+
+#name-form{
+    float: left;
+    margin-right: 30px;
+}
+
+#name-form input{
+    width: 115%;
+    height: 50px;
+    border: none;
+    background-color: #eaeef1;
+}
+
+#email-form input{
+    width: 50%;
+    height: 50px;
+    border: none;
+    background-color: #eaeef1;
+}
+
+#message{
+    width: 100%;
+    height: 150px;
+    resize: none;
+    border: none;
+    background-color: #eaeef1;
+}
+
+#submit{
+    width: 33%;
+    height: auto;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    background-color: #23b7a4;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+
+#footer{
+    width: 100%;
+    height: 100px;
+    background-color: #3a454d;
+    margin-top: 250px;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    }
+
+
+
+/*MOBILE VIEW */
+
+@media only screen and (max-width: 1080px) {
+   .nav, .nav:hover, nav:active{
+       border: none;
+    }
+
+    #team{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding-top: 10px;
+        }
+
+    .item-container{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #name-form{
+    float: none;
+}
+
+    #name-form input{
+        width: 100%;
+        height: 50px;
+        
+    }
+
+    #email-form input{
+        width: 100%;
+        height: 50px;
+       
+    }
+
+}
+
+
+@media only screen and (max-width: 700px) {
+    .item-container{
+        grid-template-columns: auto;
+    }
+    
+    #task-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+        
+    #submit{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+    #task-container{
+    display: grid;
+    grid-template-columns: auto auto;
+     
+}
+#team{
+        display: grid;
+        grid-template-columns: auto;
+        padding-top: 10px;
+        }
+
+
+}
